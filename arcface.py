@@ -29,7 +29,7 @@ class ArcFace(nn.Module):
 
         nn.init.xavier_uniform_(self.weight)
 
-        def forward(self, embedding: torch.Tensor, ground_truth):
+        def forward1(self, embedding: torch.Tensor, ground_truth):
         """
         This Implementation is from https://github.com/ronghuaiyang/arcface-pytorch, which takes
         54.804054962005466 ms for every 100 times of input (50, 512) and output (50, 10000) on 2080Ti.
